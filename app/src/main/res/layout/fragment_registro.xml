@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_200">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-320dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/banner" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialCardViewElevatedStyle"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginEnd="24dp"
+                    app:cardCornerRadius="32dp"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/registra_tu_informacion"
+                            android:textColor="@color/indigo_900"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.496"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/till_usuario"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/usuario"
+                            android:textColor="@color/indigo_900"
+                            android:textColorHint="@color/indigo_900"
+                            app:boxStrokeColor="@color/indigo_900"
+                            app:layout_constraintEnd_toEndOf="@id/textView2"
+                            app:layout_constraintStart_toStartOf="@+id/textView2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2"
+                            app:prefixTextColor="@color/indigo_900">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_usuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/gray_input"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/till_correo"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/correo"
+                            android:textColor="@color/indigo_900"
+                            android:textColorHint="@color/indigo_900"
+                            app:boxStrokeColor="@color/indigo_900"
+                            app:layout_constraintEnd_toEndOf="@+id/till_usuario"
+                            app:layout_constraintStart_toStartOf="@+id/till_usuario"
+                            app:layout_constraintTop_toBottomOf="@+id/till_usuario"
+                            app:prefixTextColor="@color/indigo_900">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_correo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gray_input"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/till_contrasena"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/contrase_a"
+                            android:textColor="@color/indigo_900"
+                            android:textColorHint="@color/indigo_900"
+                            app:boxStrokeColor="@color/indigo_900"
+                            app:layout_constraintEnd_toEndOf="@+id/till_correo"
+                            app:layout_constraintStart_toStartOf="@+id/till_correo"
+                            app:layout_constraintTop_toBottomOf="@+id/till_correo"
+                            app:prefixTextColor="@color/indigo_900">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_contrasena"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:textColor="@color/gray_input"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/till_confirmar_contrasena"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="62dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/confirmar_contrase_a"
+                            android:textColor="@color/indigo_900"
+                            android:textColorHint="@color/indigo_900"
+                            app:boxStrokeColor="@color/indigo_900"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/till_contrasena"
+                            app:layout_constraintStart_toStartOf="@+id/till_contrasena"
+                            app:layout_constraintTop_toBottomOf="@+id/till_contrasena"
+                            app:prefixTextColor="@color/indigo_900">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_confirmar_contrasena"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:textColor="@color/gray_input"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/estas_a_unos_cuantos_pasos_de_vivir_la_mejor_experiencia"
+                    android:textColor="@color/lightBlue_600"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+                    app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/button_regresar"
+                    android:layout_width="wrap_content"
+                    android:onClick="buttonClick"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/regresar_caracter_especial"
+                    android:textColor="@color/indigo_900"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView5"
+                    app:layout_constraintEnd_toEndOf="@+id/textView5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/button_crear_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="120dp"
+                    android:backgroundTint="@color/indigo_900"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/crear_cuenta"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+                    app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                    app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+                    app:layout_constraintVertical_bias="0.65" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
