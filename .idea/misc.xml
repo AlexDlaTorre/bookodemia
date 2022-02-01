@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/activity_pantalla_principal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/activity_prueba_json.xml" value="0.1" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_detalles_libros.xml" value="0.22" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_detalles_libros.xml" value="0.16374269005847952" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_pantalla_principal.xml" value="0.1480978260869565" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_perfil.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_perfil_usuario.xml" value="0.22" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/fragment_registro.xml" value="0.22" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/layout/item_cardview_libros.xml" value="0.36947791164658633" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/BooKodemia/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

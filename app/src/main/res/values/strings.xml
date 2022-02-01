@@ -1,4 +1,18 @@
 <resources>
+    <!--SharedPreferences-->
+    //poner nombre del paquete p no confundir c otro shared preferences
+    <string name="name_file_preferences">com.example.bookodemia.sharedPreferences</string>
+    <!--Keys-->
+    <string name="key_token">plain-text-token</string>
+
+    <!--Strings card view item-->
+    <string name="tv_titulo">Título: %s</string>
+    <string name="tv_autor">Content: %s</string>
+
+
+    <!--Métodos API-->
+    <string name="api_login">login</string>
+
     <string name="app_name">BooKodemia</string>
     <string name="bienvenido">¡Bienvenido!</string>
     <string name="usuario">Usuario</string>
@@ -24,4 +38,10 @@
     <string name="estas_a_unos_cuantos_pasos_de_vivir_la_mejor_experiencia">Estas a unos cuantos pasos de vivir la mejor experiencia</string>
     <string name="regresar_caracter_especial"><![CDATA[< Regresar]]></string>
     <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="tv_perfil">Perfil</string>
+    <string name="contrasena_perfil">Contraseña: %s</string>
+    <string name="api_logout">logout</string>
+    <string name="api_registro">register</string>
+    <string name="api_libros">books</string>
+    <string name="error_internet">Sin conexión a internet</string>
 </resources>

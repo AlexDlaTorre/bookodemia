@@ -35,27 +35,33 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView_titulo"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
             android:textColor="@color/black"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/button_more_about_book"
             app:layout_constraintStart_toEndOf="@+id/imageView_book"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Título" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_autor"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView_content"
+            android:layout_width="0dp"
+            android:justificationMode="inter_word"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
             android:textColor="@color/gray_input"
             android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/button_more_about_book"
+            app:layout_constraintHorizontal_bias="0.175"
             app:layout_constraintStart_toEndOf="@+id/imageView_book"
             app:layout_constraintTop_toBottomOf="@+id/textView_titulo"
-            tools:text="by Autor" />
+            tools:text="Content:" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView_categoria"
@@ -66,7 +72,7 @@
             android:layout_marginTop="8dp"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView_book"
-            app:layout_constraintTop_toBottomOf="@+id/textView_autor"
+            app:layout_constraintTop_toBottomOf="@+id/textView_content"
             tools:text="Categoría" />
 
 
